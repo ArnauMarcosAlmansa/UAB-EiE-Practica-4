@@ -1,0 +1,117 @@
+
+**** 10/15/19 17:35:02 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Practica3.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Oct 15 17:35:02 2019
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Practica3.net"
+
+**** INCLUDING Practica3.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0001 n1  1k  
+V_V1         $N_0001 0 15V
+V_V2         $N_0002 0 5V
+R_R5         n2 $N_0002  5.6k  
+R_R3         n1 n2  2.2k  
+R_R2         0 n1  1.8k  
+R_R4         0 n2  3.3K  
+
+**** RESUMING Practica3.cir ****
+.INC "Practica3.als"
+
+
+
+**** INCLUDING Practica3.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=$N_0001 2=n1 )
+V_V1            V1(+=$N_0001 -=0 )
+V_V2            V2(+=$N_0002 -=0 )
+R_R5            R5(1=n2 2=$N_0002 )
+R_R3            R3(1=n1 2=n2 )
+R_R2            R2(1=0 2=n1 )
+R_R4            R4(1=0 2=n2 )
+_    _(n1=n1)
+_    _(n2=n2)
+.ENDALIASES
+
+
+**** RESUMING Practica3.cir ****
+.probe
+
+
+.END
+
+**** 10/15/19 17:35:02 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Practica3.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   n1)    8.6250  (   n2)    5.1416  ($N_0001)   15.0000                       
+
+($N_0002)    5.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -6.375E-03
+    V_V2         2.529E-05
+
+    TOTAL POWER DISSIPATION   9.55E-02  WATTS
+
+
+**** 10/15/19 17:35:02 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Practica3.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

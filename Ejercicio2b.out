@@ -1,0 +1,294 @@
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Oct 15 18:17:19 2019
+
+
+.PARAM         X=10k 
+
+** Analysis setup **
+.tran 0ns 3ms
+.STEP  PARAM X LIST 
++ 10k,50k,100k
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Ejercicio2b.net"
+
+**** INCLUDING Ejercicio2b.net ****
+* Schematics Netlist *
+
+
+
+R_R1         A B  1k  
+R_R2         0 B  {X}  
+V_V3         A 0 10
+
+**** RESUMING Ejercicio2b.cir ****
+.INC "Ejercicio2b.als"
+
+
+
+**** INCLUDING Ejercicio2b.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=A 2=B )
+R_R2            R2(1=0 2=B )
+V_V3            V3(+=A -=0 )
+_    _(B=B)
+_    _(A=A)
+.ENDALIASES
+
+
+**** RESUMING Ejercicio2b.cir ****
+.probe
+
+
+.END
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)   10.0000  (    B)    9.0909  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -9.091E-04
+
+    TOTAL POWER DISSIPATION   9.09E-03  WATTS
+
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)   10.0000  (    B)    9.0909  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -9.091E-04
+
+    TOTAL POWER DISSIPATION   9.09E-03  WATTS
+
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)   10.0000  (    B)    9.8039  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.961E-04
+
+    TOTAL POWER DISSIPATION   1.96E-03  WATTS
+
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)   10.0000  (    B)    9.8039  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.961E-04
+
+    TOTAL POWER DISSIPATION   1.96E-03  WATTS
+
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)   10.0000  (    B)    9.9010  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -9.901E-05
+
+    TOTAL POWER DISSIPATION   9.90E-04  WATTS
+
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+
+**** 10/15/19 18:17:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2b.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)   10.0000  (    B)    9.9010  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -9.901E-05
+
+    TOTAL POWER DISSIPATION   9.90E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

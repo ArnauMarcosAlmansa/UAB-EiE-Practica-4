@@ -1,0 +1,23 @@
+* D:\Archivos\Proyecto\Ejercicio2.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Oct 15 17:54:35 2019
+
+
+
+** Analysis setup **
+.tran 0ns 3ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Ejercicio2.net"
+.INC "Ejercicio2.als"
+
+
+.probe
+
+
+.END

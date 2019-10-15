@@ -1,0 +1,136 @@
+
+**** 10/15/19 17:54:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Oct 15 17:54:35 2019
+
+
+
+** Analysis setup **
+.tran 0ns 3ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Ejercicio2.net"
+
+**** INCLUDING Ejercicio2.net ****
+* Schematics Netlist *
+
+
+
+R_R1         A B  1k  
+R_R2         0 B  2k  
+V_V2         A 0  
++SIN 0V 5 1k 0 0 0
+
+**** RESUMING Ejercicio2.cir ****
+.INC "Ejercicio2.als"
+
+
+
+**** INCLUDING Ejercicio2.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=A 2=B )
+R_R2            R2(1=0 2=B )
+V_V2            V2(+=A -=0 )
+_    _(B=B)
+_    _(A=A)
+.ENDALIASES
+
+
+**** RESUMING Ejercicio2.cir ****
+.probe
+
+
+.END
+
+**** 10/15/19 17:54:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)    0.0000  (    B)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/15/19 17:54:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+**** 10/15/19 17:54:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio2.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)    0.0000  (    B)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

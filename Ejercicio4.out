@@ -1,0 +1,104 @@
+
+**** 10/15/19 18:29:00 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio4.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Oct 15 18:29:00 2019
+
+
+
+** Analysis setup **
+.ac DEC 100 0.01 10e6
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Ejercicio4.net"
+
+**** INCLUDING Ejercicio4.net ****
+* Schematics Netlist *
+
+
+
+C_C1         0 $N_0001  100n  
+V_V1         $N_0001 0  AC 1
++SIN 0 0 1k 0 0 0
+
+**** RESUMING Ejercicio4.cir ****
+.INC "Ejercicio4.als"
+
+
+
+**** INCLUDING Ejercicio4.als ****
+* Schematics Aliases *
+
+.ALIASES
+C_C1            C1(1=0 2=$N_0001 )
+V_V1            V1(+=$N_0001 -=0 )
+.ENDALIASES
+
+
+**** RESUMING Ejercicio4.cir ****
+.probe
+
+
+.END
+
+**** 10/15/19 18:29:00 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio4.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/15/19 18:29:00 *********** Evaluation PSpice (Nov 1999) **************
+
+ * D:\Archivos\Proyecto\Ejercicio4.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

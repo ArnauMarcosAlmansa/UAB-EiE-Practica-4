@@ -1,0 +1,26 @@
+* D:\Archivos\Proyecto\Ejercicio2b.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Oct 15 18:17:19 2019
+
+
+.PARAM         X=10k 
+
+** Analysis setup **
+.tran 0ns 3ms
+.STEP  PARAM X LIST 
++ 10k,50k,100k
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Ejercicio2b.net"
+.INC "Ejercicio2b.als"
+
+
+.probe
+
+
+.END

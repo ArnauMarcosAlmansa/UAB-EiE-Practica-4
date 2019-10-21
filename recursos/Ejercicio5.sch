@@ -1,4 +1,4 @@
-*version 9.1 1278128712
+*version 9.1 920798347
 u 61
 R? 4
 D? 3
@@ -11,7 +11,7 @@ V? 2
 +2 1e6
 .TRAN 1 0 0 0
 +0 0ns
-+1 1000ns
++1 0.04s
 @targets
 @attributes
 @translators
@@ -25,10 +25,10 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 2342 
+pageloc 1 0 2458 
 @status
-n 0 119:09:15:19:01:50;1571158910 e 
-s 2832 119:09:15:19:01:50;1571158910 e 
+n 0 119:09:21:13:49:50;1571658590 e 
+s 2832 119:09:21:13:49:50;1571658590 e 
 *page 1 0 970 720 iA
 @ports
 port 36 GND_EARTH 180 210 h

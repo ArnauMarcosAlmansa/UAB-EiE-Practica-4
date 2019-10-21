@@ -1,7 +1,7 @@
 
-**** 10/15/19 19:01:50 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/21/19 13:49:50 *********** Evaluation PSpice (Nov 1999) **************
 
- * D:\Archivos\Proyecto\Ejercicio5.sch
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio5.sch
 
 
  ****     CIRCUIT DESCRIPTION
@@ -13,12 +13,12 @@
 
 
 * Schematics Version 9.1 - Web Update 1
-* Tue Oct 15 19:01:50 2019
+* Mon Oct 21 13:49:50 2019
 
 
 
 ** Analysis setup **
-.tran 0ns 1000ns
+.tran 0ns 0.04s
 .OP 
 
 
@@ -63,9 +63,9 @@ _    _(Vo=Vo)
 
 .END
 
-**** 10/15/19 19:01:50 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/21/19 13:49:50 *********** Evaluation PSpice (Nov 1999) **************
 
- * D:\Archivos\Proyecto\Ejercicio5.sch
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio5.sch
 
 
  ****     Diode MODEL PARAMETERS
@@ -90,9 +90,9 @@ _    _(Vo=Vo)
            M     .2762       
 
 
-**** 10/15/19 19:01:50 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/21/19 13:49:50 *********** Evaluation PSpice (Nov 1999) **************
 
- * D:\Archivos\Proyecto\Ejercicio5.sch
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio5.sch
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -118,9 +118,9 @@ _    _(Vo=Vo)
     TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
-**** 10/15/19 19:01:50 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/21/19 13:49:50 *********** Evaluation PSpice (Nov 1999) **************
 
- * D:\Archivos\Proyecto\Ejercicio5.sch
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio5.sch
 
 
  ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
@@ -142,9 +142,9 @@ ID           0.00E+00
 VD           7.73E-22 
 REQ          3.61E+06 
 CAP          5.25E-11 
-**** 10/15/19 19:01:50 *********** Evaluation PSpice (Nov 1999) **************
+**** 10/21/19 13:49:50 *********** Evaluation PSpice (Nov 1999) **************
 
- * D:\Archivos\Proyecto\Ejercicio5.sch
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio5.sch
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -173,5 +173,5 @@ CAP          5.25E-11
 
           JOB CONCLUDED
 
-          TOTAL JOB TIME             .02
+          TOTAL JOB TIME            0.00
 

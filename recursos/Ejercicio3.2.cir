@@ -1,0 +1,26 @@
+* C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.2.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Oct 21 12:02:11 2019
+
+
+.PARAM         x=10k 
+
+** Analysis setup **
+.tran 0ns 0.3ms
+.STEP  PARAM x LIST 
++ 10k, 50k, 100k
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Ejercicio3.2.net"
+.INC "Ejercicio3.2.als"
+
+
+.probe
+
+
+.END

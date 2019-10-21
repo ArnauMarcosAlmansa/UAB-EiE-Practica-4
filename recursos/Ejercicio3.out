@@ -1,0 +1,294 @@
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Oct 21 11:41:39 2019
+
+
+.PARAM         x=10k 
+
+** Analysis setup **
+.tran 0ns 0.3ms
+.STEP  PARAM x LIST 
++ 10k, 50k, 100k
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Ejercicio3.net"
+
+**** INCLUDING Ejercicio3.net ****
+* Schematics Netlist *
+
+
+
+R_R2         0 Vo  {x}  
+R_R1         $N_0001 Vo  10k  
+V_V4         $N_0001 0  AC 1
++SIN 0 10 10k 0 0 0
+
+**** RESUMING Ejercicio3.cir ****
+.INC "Ejercicio3.als"
+
+
+
+**** INCLUDING Ejercicio3.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R2            R2(1=0 2=Vo )
+R_R1            R1(1=$N_0001 2=Vo )
+V_V4            V4(+=$N_0001 -=0 )
+_    _(Vo=Vo)
+.ENDALIASES
+
+
+**** RESUMING Ejercicio3.cir ****
+.probe
+
+
+.END
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vo)    0.0000  ($N_0001)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   10.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vo)    0.0000  ($N_0001)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vo)    0.0000  ($N_0001)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =   50.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vo)    0.0000  ($N_0001)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vo)    0.0000  ($N_0001)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+
+**** 10/21/19 11:41:39 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\arnau\Desktop\repos\UAB-EiE-Practica-4\recursos\Ejercicio3.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM X =  100.0000E+03
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   Vo)    0.0000  ($N_0001)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+
